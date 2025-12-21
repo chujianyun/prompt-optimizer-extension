@@ -7,7 +7,7 @@
 
 ## 演示视频
 
-<video src="resources/video/提示词优化插件使用演示.mp4" controls width="100%"></video>
+<video src="[resources/video](https://github.com/chujianyun/prompt-optimizer-extension/tree/main/resources/video)/提示词优化插件使用演示.mp4" controls width="100%"></video>
 
 ## 功能特性
 
@@ -93,7 +93,7 @@ prompt-optimizer-extension/
 
 ## 相关项目
 
-- [Claude Skill 版本](https://github.com/chujianyun/skills) - 基于同一套提示词框架的 Claude Desktop Skill 实现
+- [Claude Skill 版本](https://github.com/chujianyun/skills) - 基于同一套提示词优化思路的 Claude Skill 实现
 
 ## 许可证
 
