@@ -15,7 +15,7 @@
 ## 功能特性
 
 - **智能框架匹配** - 根据需求自动推荐最适合的提示词框架
-- **多 AI 服务支持** - DeepSeek、Kimi、OpenRouter 灵活切换
+- **多 AI 服务支持** - DeepSeek、Kimi、OpenRouter、阿里云百炼、硅基流动、CherryIN、火山引擎灵活切换
 - **交互式澄清** - 通过对话式交互完善需求细节
 - **一键复制** - 生成的提示词可直接复制使用
 - **57 个框架** - 涵盖营销、决策、教育、产品开发等多个领域
@@ -36,10 +36,15 @@
 推荐使用 **DeepSeek**（性价比高，速度快）
 
 | 服务 | API 端点 | 推荐模型 | 获取 Key |
-|------|---------|---------|---------|
+|------|---------|---------|----------|
 | DeepSeek | api.deepseek.com | deepseek-chat | [官网](https://platform.deepseek.com/) |
 | Kimi | api.moonshot.cn | kimi-k2-turbo-preview | [官网](https://platform.moonshot.cn/) |
-| OpenRouter | openrouter.ai | anthropic/claude-3.5-sonnet | [官网](https://openrouter.ai/) |
+| OpenRouter | openrouter.ai | google/gemini-3-flash-preview | [官网](https://openrouter.ai/) |
+| 阿里云百炼 | dashscope.aliyuncs.com | qwen3-max | [官网](https://www.aliyun.com/product/bailian) |
+| 硅基流动 | api.siliconflow.cn | deepseek-ai/DeepSeek-V3.2 | [官网](https://cloud.siliconflow.cn/) |
+| CherryIN | open.cherryin.cc | gpt-4o | [官网](https://open.cherryin.ai/console) |
+| 火山引擎 | ark.cn-beijing.volces.com |doubao-seed-1-6-flash-250828 | [官网](https://console.volcengine.com/) |
+| OpenAI 兼容 | 自定义 | 自定义 | - |
 
 ### 3. 使用流程
 

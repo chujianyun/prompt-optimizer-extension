@@ -8,7 +8,11 @@ class AIService {
     this.endpoints = {
       deepseek: 'https://api.deepseek.com/chat/completions',
       kimi: 'https://api.moonshot.cn/v1/chat/completions',
-      openrouter: 'https://openrouter.ai/api/v1/chat/completions'
+      openrouter: 'https://openrouter.ai/api/v1/chat/completions',
+      aliyun: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+      siliconflow: 'https://api.siliconflow.cn/v1/chat/completions',
+      cherryin: 'https://open.cherryin.cc/v1/chat/completions',
+      volcengine: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
     };
     this.maxRetries = 3;
     this.timeout = 30000; // 30秒超时

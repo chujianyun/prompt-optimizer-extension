@@ -155,7 +155,15 @@ class PromptOptimizerApp {
     document.getElementById('kimiApiKey').value = config.kimiApiKey || '';
     document.getElementById('kimiModel').value = config.kimiModel || 'kimi-k2-turbo-preview';
     document.getElementById('openrouterApiKey').value = config.openrouterApiKey || '';
-    document.getElementById('openrouterModel').value = config.openrouterModel || 'anthropic/claude-3.5-sonnet';
+    document.getElementById('openrouterModel').value = config.openrouterModel || 'google/gemini-3-flash-preview';
+    document.getElementById('aliyunApiKey').value = config.aliyunApiKey || '';
+    document.getElementById('aliyunModel').value = config.aliyunModel || 'qwen3-max';
+    document.getElementById('siliconflowApiKey').value = config.siliconflowApiKey || '';
+    document.getElementById('siliconflowModel').value = config.siliconflowModel || 'deepseek-ai/DeepSeek-V3.2';
+    document.getElementById('cherryinApiKey').value = config.cherryinApiKey || '';
+    document.getElementById('cherryinModel').value = config.cherryinModel || 'google/gemini-3-pro-preview';
+    document.getElementById('volcengineApiKey').value = config.volcengineApiKey || '';
+    document.getElementById('volcengineModel').value = config.volcengineModel || 'doubao-seed-1-6-flash-250828';
     document.getElementById('customEndpoint').value = config.customEndpoint || '';
     document.getElementById('customApiKey').value = config.customApiKey || '';
     document.getElementById('customModel').value = config.customModel || '';
@@ -175,7 +183,7 @@ class PromptOptimizerApp {
    * 更新服务配置显示
    */
   updateServiceConfigVisibility(activeService) {
-    const configs = ['deepseekConfig', 'kimiConfig', 'openrouterConfig', 'customConfig'];
+    const configs = ['deepseekConfig', 'kimiConfig', 'openrouterConfig', 'aliyunConfig', 'siliconflowConfig', 'cherryinConfig', 'volcengineConfig', 'customConfig'];
     configs.forEach(id => {
       const element = document.getElementById(id);
       element.style.display = id.startsWith(activeService) ? 'block' : 'none';
@@ -194,6 +202,14 @@ class PromptOptimizerApp {
       kimiModel: document.getElementById('kimiModel').value,
       openrouterApiKey: document.getElementById('openrouterApiKey').value,
       openrouterModel: document.getElementById('openrouterModel').value,
+      aliyunApiKey: document.getElementById('aliyunApiKey').value,
+      aliyunModel: document.getElementById('aliyunModel').value,
+      siliconflowApiKey: document.getElementById('siliconflowApiKey').value,
+      siliconflowModel: document.getElementById('siliconflowModel').value,
+      cherryinApiKey: document.getElementById('cherryinApiKey').value,
+      cherryinModel: document.getElementById('cherryinModel').value,
+      volcengineApiKey: document.getElementById('volcengineApiKey').value,
+      volcengineModel: document.getElementById('volcengineModel').value,
       customEndpoint: document.getElementById('customEndpoint').value,
       customApiKey: document.getElementById('customApiKey').value,
       customModel: document.getElementById('customModel').value
@@ -231,12 +247,24 @@ class PromptOptimizerApp {
       } else if (activeService === 'kimi') {
         apiKey = document.getElementById('kimiApiKey').value;
         model = document.getElementById('kimiModel').value;
+      } else if (activeService === 'openrouter') {
+        apiKey = document.getElementById('openrouterApiKey').value;
+        model = document.getElementById('openrouterModel').value;
+      } else if (activeService === 'aliyun') {
+        apiKey = document.getElementById('aliyunApiKey').value;
+        model = document.getElementById('aliyunModel').value;
+      } else if (activeService === 'siliconflow') {
+        apiKey = document.getElementById('siliconflowApiKey').value;
+        model = document.getElementById('siliconflowModel').value;
+      } else if (activeService === 'cherryin') {
+        apiKey = document.getElementById('cherryinApiKey').value;
+        model = document.getElementById('cherryinModel').value;
+      } else if (activeService === 'volcengine') {
+        apiKey = document.getElementById('volcengineApiKey').value;
+        model = document.getElementById('volcengineModel').value;
       } else if (activeService === 'custom') {
         apiKey = document.getElementById('customApiKey').value;
         model = document.getElementById('customModel').value;
-      } else {
-        apiKey = document.getElementById('openrouterApiKey').value;
-        model = document.getElementById('openrouterModel').value;
       }
       
       // custom 服务需要传入 endpoint

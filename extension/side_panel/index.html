@@ -101,6 +101,10 @@
             <option value="deepseek">DeepSeek</option>
             <option value="kimi">Kimi</option>
             <option value="openrouter">OpenRouter</option>
+            <option value="aliyun">阿里云百炼</option>
+            <option value="siliconflow">硅基流动</option>
+            <option value="cherryin">CherryIN</option>
+            <option value="volcengine">火山引擎</option>
             <option value="custom">OpenAI 兼容</option>
           </select>
         </div>
@@ -140,7 +144,63 @@
           </div>
           <div class="form-group">
             <label for="openrouterModel" class="form-label">模型</label>
-            <input type="text" id="openrouterModel" class="form-input" placeholder="anthropic/claude-3.5-sonnet">
+            <input type="text" id="openrouterModel" class="form-input" placeholder="google/gemini-3-flash-preview">
+          </div>
+        </div>
+
+        <!-- 阿里云百炼配置 -->
+        <div class="service-config" id="aliyunConfig">
+          <h3 class="config-title">阿里云百炼配置</h3>
+          <p class="config-hint">官网: <a href="https://www.aliyun.com/product/bailian" target="_blank">https://www.aliyun.com/product/bailian</a></p>
+          <div class="form-group">
+            <label for="aliyunApiKey" class="form-label">API Key</label>
+            <input type="password" id="aliyunApiKey" class="form-input" placeholder="sk-...">
+          </div>
+          <div class="form-group">
+            <label for="aliyunModel" class="form-label">模型</label>
+            <input type="text" id="aliyunModel" class="form-input" placeholder="qwen3-max">
+          </div>
+        </div>
+
+        <!-- 硅基流动配置 -->
+        <div class="service-config" id="siliconflowConfig">
+          <h3 class="config-title">硅基流动配置</h3>
+          <p class="config-hint">官网: <a href="https://cloud.siliconflow.cn/" target="_blank">https://cloud.siliconflow.cn/</a></p>
+          <div class="form-group">
+            <label for="siliconflowApiKey" class="form-label">API Key</label>
+            <input type="password" id="siliconflowApiKey" class="form-input" placeholder="sk-...">
+          </div>
+          <div class="form-group">
+            <label for="siliconflowModel" class="form-label">模型</label>
+            <input type="text" id="siliconflowModel" class="form-input" placeholder="deepseek-ai/DeepSeek-V3.2">
+          </div>
+        </div>
+
+        <!-- CherryIN 配置 -->
+        <div class="service-config" id="cherryinConfig">
+          <h3 class="config-title">CherryIN 配置</h3>
+          <p class="config-hint">官网: <a href="https://open.cherryin.ai/console" target="_blank">https://open.cherryin.ai/console</a></p>
+          <div class="form-group">
+            <label for="cherryinApiKey" class="form-label">API Key</label>
+            <input type="password" id="cherryinApiKey" class="form-input" placeholder="sk-...">
+          </div>
+          <div class="form-group">
+            <label for="cherryinModel" class="form-label">模型</label>
+            <input type="text" id="cherryinModel" class="form-input" placeholder="google/gemini-3-pro-preview">
+          </div>
+        </div>
+
+        <!-- 火山引擎配置 -->
+        <div class="service-config" id="volcengineConfig">
+          <h3 class="config-title">火山引擎配置</h3>
+          <p class="config-hint">官网: <a href="https://console.volcengine.com/ark" target="_blank">https://console.volcengine.com/ark</a></p>
+          <div class="form-group">
+            <label for="volcengineApiKey" class="form-label">API Key</label>
+            <input type="password" id="volcengineApiKey" class="form-input" placeholder="sk-...">
+          </div>
+          <div class="form-group">
+            <label for="volcengineModel" class="form-label">模型</label>
+            <input type="text" id="volcengineModel" class="form-input" placeholder="doubao-seed-1-6-flash-250828">
           </div>
         </div>
 

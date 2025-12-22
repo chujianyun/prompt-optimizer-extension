@@ -13,6 +13,18 @@ class StorageManager {
       kimiModel: 'kimi-k2-turbo-preview',
       openrouterApiKey: '',
       openrouterModel: 'anthropic/claude-sonnet-4.5',
+      // 阿里云百炼
+      aliyunApiKey: '',
+      aliyunModel: 'qwen-turbo',
+      // 硅基流动
+      siliconflowApiKey: '',
+      siliconflowModel: 'deepseek-ai/DeepSeek-V3.2',
+      // CherryIN
+      cherryinApiKey: '',
+      cherryinModel: 'google/gemini-3-pro-preview',
+      // 火山引擎
+      volcengineApiKey: '',
+      volcengineModel: 'doubao-pro-32k',
       // OpenAI 兼容服务配置
       customApiKey: '',
       customModel: '',
@@ -91,6 +103,18 @@ class StorageManager {
     } else if (activeService === 'openrouter') {
       if (!config.openrouterApiKey) missingFields.push('openrouterApiKey');
       if (!config.openrouterModel) missingFields.push('openrouterModel');
+    } else if (activeService === 'aliyun') {
+      if (!config.aliyunApiKey) missingFields.push('aliyunApiKey');
+      if (!config.aliyunModel) missingFields.push('aliyunModel');
+    } else if (activeService === 'siliconflow') {
+      if (!config.siliconflowApiKey) missingFields.push('siliconflowApiKey');
+      if (!config.siliconflowModel) missingFields.push('siliconflowModel');
+    } else if (activeService === 'cherryin') {
+      if (!config.cherryinApiKey) missingFields.push('cherryinApiKey');
+      if (!config.cherryinModel) missingFields.push('cherryinModel');
+    } else if (activeService === 'volcengine') {
+      if (!config.volcengineApiKey) missingFields.push('volcengineApiKey');
+      if (!config.volcengineModel) missingFields.push('volcengineModel');
     } else if (activeService === 'custom') {
       if (!config.customApiKey) missingFields.push('customApiKey');
       if (!config.customModel) missingFields.push('customModel');
@@ -129,6 +153,30 @@ class StorageManager {
         apiKey: config.openrouterApiKey,
         model: config.openrouterModel
       };
+    } else if (service === 'aliyun') {
+      return {
+        service: 'aliyun',
+        apiKey: config.aliyunApiKey,
+        model: config.aliyunModel
+      };
+    } else if (service === 'siliconflow') {
+      return {
+        service: 'siliconflow',
+        apiKey: config.siliconflowApiKey,
+        model: config.siliconflowModel
+      };
+    } else if (service === 'cherryin') {
+      return {
+        service: 'cherryin',
+        apiKey: config.cherryinApiKey,
+        model: config.cherryinModel
+      };
+    } else if (service === 'volcengine') {
+      return {
+        service: 'volcengine',
+        apiKey: config.volcengineApiKey,
+        model: config.volcengineModel
+      };
     } else if (service === 'custom') {
       return {
         service: 'custom',
@@ -160,6 +208,10 @@ class StorageManager {
       deepseekModel: config.deepseekModel,
       kimiModel: config.kimiModel,
       openrouterModel: config.openrouterModel,
+      aliyunModel: config.aliyunModel,
+      siliconflowModel: config.siliconflowModel,
+      cherryinModel: config.cherryinModel,
+      volcengineModel: config.volcengineModel,
       customModel: config.customModel,
       customEndpoint: config.customEndpoint
     };

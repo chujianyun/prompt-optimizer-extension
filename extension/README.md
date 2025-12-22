@@ -1,11 +1,11 @@
 # Prompt Optimizer - Chrome 扩展
 
-一个基于 57 个成熟提示词框架的智能提示词优化助手,支持 DeepSeek、Kimi、OpenRouter 等多种 AI 服务。
+一个基于 57 个成熟提示词框架的智能提示词优化助手,支持 DeepSeek、Kimi、OpenRouter、阿里云百炼、硅基流动、CherryIN、火山引擎等多种 AI 服务。
 
 ## 功能特性
 
 ✨ **智能框架匹配** - 根据您的需求自动推荐最适合的 2 个提示词框架
-🤖 **多 AI 服务支持** - 支持 DeepSeek、Kimi、OpenRouter,可灵活切换
+🤖 **多 AI 服务支持** - 支持 DeepSeek、Kimi、OpenRouter、阿里云百炼、硅基流动、CherryIN、火山引擎,可灵活切换
 💬 **交互式澄清** - 通过对话式交互帮助您完善需求细节
 📋 **一键复制** - 生成的提示词可直接复制使用
 🎯 **57 个框架** - 涵盖营销、决策、教育、产品开发等多个领域
@@ -40,7 +40,7 @@ zip -r prompt-optimizer.zip *
 
 1. 点击浏览器工具栏中的插件图标,打开侧边栏
 2. 首次使用会提示配置 AI 服务
-3. 选择您要使用的 AI 服务(DeepSeek/Kimi/OpenRouter)
+3. 选择您要使用的 AI 服务(DeepSeek/Kimi/OpenRouter/阿里云百炼/硅基流动/CherryIN/火山引擎/OpenAI 兼容)
 4. 输入对应的 API Key 和模型名称
 5. 点击"测试连接"确保配置正确
 6. 保存配置
@@ -78,6 +78,31 @@ zip -r prompt-optimizer.zip *
 - API 端点: `https://openrouter.ai/api/v1/chat/completions`
 - 推荐模型: `anthropic/claude-3.5-sonnet`
 - 获取 API Key: [OpenRouter 官网](https://openrouter.ai/)
+
+#### 阿里云百炼
+- API 端点: `https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions`
+- 推荐模型: `qwen-turbo`
+- 获取 API Key: [阿里云百炼官网](https://www.aliyun.com/product/bailian)
+
+#### 硅基流动
+- API 端点: `https://api.siliconflow.cn/v1/chat/completions`
+- 推荐模型: `Qwen/Qwen2.5-7B-Instruct`
+- 获取 API Key: [硅基流动官网](https://cloud.siliconflow.cn/i/98WfcWmQ)
+
+#### CherryIN
+- API 端点: `https://open.cherryin.cc/v1/chat/completions`
+- 推荐模型: `google/gemini-3-pro-preview`
+- 获取 API Key: [CherryIN 官网](https://open.cherryin.ai/console)
+
+#### 火山引擎
+- API 端点: `https://ark.cn-beijing.volces.com/api/v3/chat/completions`
+- 推荐模型: `doubao-seed-1-8-251215`
+- 获取 API Key: [火山引擎官网](https://console.volcengine.com/)
+
+#### OpenAI 兼容服务
+- 支持任意兼容 OpenAI API 格式的服务
+- 需自行填写 API URL、API Key 和模型名称
+- 适用于自建服务、其他第三方中转等场景
 
 ## 目录结构
 
@@ -181,6 +206,9 @@ A: 可以!在生成结果后,您可以在输入框中说明修改需求,系统�
 欢迎提交 Issue 和 Pull Request!
 
 ## 更新日志
+
+### v1.1.0 (2024-12-22)
+- 🆕 新增阿里云百炼、硅基流动、CherryIN、火山引擎 4 个 AI 服务
 
 ### v1.0.0 (2024-12-21)
 - 🎉 首次发布
