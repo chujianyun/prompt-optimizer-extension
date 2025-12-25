@@ -97,7 +97,7 @@ zip -r prompt-optimizer.zip *
 #### 火山引擎
 - API 端点: `https://ark.cn-beijing.volces.com/api/v3/chat/completions`
 - 推荐模型: `doubao-seed-1-8-251215`
-- 获取 API Key: [火山引擎官网](https://console.volcengine.com/)
+- 获取 API Key: [火山引擎官网](https://console.volcengine.com/ark)
 
 #### OpenAI 兼容服务
 - 支持任意兼容 OpenAI API 格式的服务

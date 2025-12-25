@@ -10,7 +10,8 @@
   "host_permissions": [
     "https://api.deepseek.com/*",
     "https://api.moonshot.cn/*",
-    "https://openrouter.ai/*"
+    "https://openrouter.ai/*",
+    "https://antchat.alipay.com/*"
   ],
   "background": {
     "service_worker": "background/service_worker.js"
