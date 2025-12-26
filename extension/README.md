@@ -99,6 +99,11 @@ zip -r prompt-optimizer.zip *
 - 推荐模型: `doubao-seed-1-8-251215`
 - 获取 API Key: [火山引擎官网](https://console.volcengine.com/ark)
 
+#### AntChat
+- API 端点: `https://antchat.alipay.com/v1/chat/completions`
+- 推荐模型: `Kimi-K2-Instruct-0905`
+- 获取 API Key: 暂无官网
+
 #### OpenAI 兼容服务
 - 支持任意兼容 OpenAI API 格式的服务
 - 需自行填写 API URL、API Key 和模型名称

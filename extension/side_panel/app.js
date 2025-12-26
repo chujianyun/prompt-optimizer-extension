@@ -164,6 +164,8 @@ class PromptOptimizerApp {
     document.getElementById('cherryinModel').value = config.cherryinModel || 'google/gemini-3-pro-preview';
     document.getElementById('volcengineApiKey').value = config.volcengineApiKey || '';
     document.getElementById('volcengineModel').value = config.volcengineModel || 'doubao-seed-1-6-flash-250828';
+    document.getElementById('antchatApiKey').value = config.antchatApiKey || '';
+    document.getElementById('antchatModel').value = config.antchatModel || 'Kimi-K2-Instruct-0905';
     document.getElementById('customEndpoint').value = config.customEndpoint || '';
     document.getElementById('customApiKey').value = config.customApiKey || '';
     document.getElementById('customModel').value = config.customModel || '';
@@ -183,7 +185,7 @@ class PromptOptimizerApp {
    * 更新服务配置显示
    */
   updateServiceConfigVisibility(activeService) {
-    const configs = ['deepseekConfig', 'kimiConfig', 'openrouterConfig', 'aliyunConfig', 'siliconflowConfig', 'cherryinConfig', 'volcengineConfig', 'customConfig'];
+    const configs = ['deepseekConfig', 'kimiConfig', 'openrouterConfig', 'aliyunConfig', 'siliconflowConfig', 'cherryinConfig', 'volcengineConfig', 'antchatConfig', 'customConfig'];
     configs.forEach(id => {
       const element = document.getElementById(id);
       element.style.display = id.startsWith(activeService) ? 'block' : 'none';
@@ -210,6 +212,8 @@ class PromptOptimizerApp {
       cherryinModel: document.getElementById('cherryinModel').value,
       volcengineApiKey: document.getElementById('volcengineApiKey').value,
       volcengineModel: document.getElementById('volcengineModel').value,
+      antchatApiKey: document.getElementById('antchatApiKey').value,
+      antchatModel: document.getElementById('antchatModel').value,
       customEndpoint: document.getElementById('customEndpoint').value,
       customApiKey: document.getElementById('customApiKey').value,
       customModel: document.getElementById('customModel').value
@@ -262,6 +266,9 @@ class PromptOptimizerApp {
       } else if (activeService === 'volcengine') {
         apiKey = document.getElementById('volcengineApiKey').value;
         model = document.getElementById('volcengineModel').value;
+      } else if (activeService === 'antchat') {
+        apiKey = document.getElementById('antchatApiKey').value;
+        model = document.getElementById('antchatModel').value;
       } else if (activeService === 'custom') {
         apiKey = document.getElementById('customApiKey').value;
         model = document.getElementById('customModel').value;

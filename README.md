@@ -44,6 +44,7 @@
 | 硅基流动 | api.siliconflow.cn | deepseek-ai/DeepSeek-V3.2 | [官网](https://cloud.siliconflow.cn/) |
 | CherryIN | open.cherryin.cc | gpt-4o | [官网](https://open.cherryin.ai/console) |
 | 火山引擎 | ark.cn-beijing.volces.com |doubao-seed-1-6-flash-250828 | [官网](https://console.volcengine.com/ark) |
+| AntChat | antchat.alipay.com | Kimi-K2-Instruct-0905 | - |
 | OpenAI 兼容 | 自定义 | 自定义 | - |
 
 注：Chrome 扩展默认受同源策略限制，无法跨域请求外部 API. OpenAI 兼容如果不支持，需要再 manifest.json 的 host_permissions 中增加对应的 url

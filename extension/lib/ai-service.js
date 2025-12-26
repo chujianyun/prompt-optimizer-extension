@@ -12,7 +12,8 @@ class AIService {
       aliyun: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
       siliconflow: 'https://api.siliconflow.cn/v1/chat/completions',
       cherryin: 'https://open.cherryin.cc/v1/chat/completions',
-      volcengine: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
+      volcengine: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
+      antchat: 'https://antchat.alipay.com/v1/chat/completions'
     };
     this.maxRetries = 3;
     this.timeout = 30000; // 30秒超时
