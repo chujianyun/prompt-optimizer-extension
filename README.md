@@ -1,5 +1,5 @@
 # Prompt Optimizer
-![](https://mingmingruyue-hz.oss-cn-hangzhou.aliyuncs.com/2025/20251220194434728.png)
+![](https://mingmingruyue-hz.oss-cn-hangzhou.aliyuncs.com/2025/20260115214735190.png)
 
 当前很多提示词优化工具缺乏用户核对，而且给出的提示词虽然很结构化和详细，但是多为通用框架。
 
